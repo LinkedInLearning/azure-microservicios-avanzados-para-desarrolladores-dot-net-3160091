@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
 using WisdomPetMedicine.Pet.Api.Commands;
+using WisdomPetMedicine.Pet.Api.IntegrationEvents;
+using WisdomPetMedicine.Pet.Domain.Events;
 using WisdomPetMedicine.Pet.Domain.Repositories;
 using WisdomPetMedicine.Pet.Domain.Services;
 using WisdomPetMedicine.Pet.Domain.ValueObjects;
@@ -17,6 +19,17 @@ namespace WisdomPetMedicine.Pet.Api.ApplicationServices
         {
             this.petRepository = petRepository;
             this.breedService = breedService;
+
+            DomainEvents.PetFlaggedForAdoption.Register(c =>
+            {
+                var integrationEvent = new PetFlaggedForAdoptionIntegrationEvent(c.Id,
+                                                                                 c.Name,
+                                                                                 c.Breed,
+                                                                                 c.Sex,
+                                                                                 c.Color,
+                                                                                 c.DateOfBirth,
+                                                                                 c.Species);
+            });
         }
 
         public async Task HandleCommandAsync(CreatePetCommand command)
