@@ -10,11 +10,11 @@ namespace WisdomPetMedicine.RescueQuery.Api.Controllers.V1
     [ApiVersion("1.0")]
     [ApiController]
     [Route("[controller]")]
-    public class RequestQueryController : ControllerBase
+    public class RescueQueryController : ControllerBase
     {
         private readonly IConfiguration configuration;
 
-        public RequestQueryController(IConfiguration configuration)
+        public RescueQueryController(IConfiguration configuration)
         {
             this.configuration = configuration;
         }
