@@ -53,7 +53,9 @@ namespace WisdomPetMedicine.Hospital.Api.IntegrationEvents
             var body = args.Message.Body.ToString();
             var theEvent = JsonConvert.DeserializeObject<PetTransferredToHospitalIntegrationEvent>(body);
             await args.CompleteMessageAsync(args.Message);
-
+            
+            logger?.LogInformation($"Received message: {body}");
+            
             PropagateTracing(args.Message.ApplicationProperties, body);
 
             using var scope = serviceScopeFactory.CreateScope();
