@@ -9,6 +9,12 @@
 	<PackageReference Include="Dapper" Version="2.0.90" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10" />
+	<PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.1.0" />
+	<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.0.0-rc7" />
+	<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc7" />
+	<PackageReference Include="OpenTelemetry.Instrumentation.SqlClient" Version="1.0.0-rc7" />
+	<PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc7" />
+	<PackageReference Include="Azure.Monitor.OpenTelemetry.Exporter" Version="1.0.0-beta.2" />
   </ItemGroup>
 
   <ItemGroup>
