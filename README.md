@@ -9,9 +9,7 @@ Descubre conceptos y patrones de diseño sofisticados para construir aplicacione
 El repositorio tiene branches o ramas para cada video. Para acceder a una específica, puedes ir desde el menú emergente de GitHub, y ver el curso desde esa sección, o bien desde la URL con /tree/BRANCH_NAME.
 
 ## Branches
-Las ramas están estructuradas de manera que se corresponden con cada uno de los videos. La nomenclatura es  `TÍTULO#_VÍDEO#` O `CAPÍTULO#_VÍDEO#`. o por ejemplo, $_MongoDB hace referencia al tercer video del segundo capítulo.
-
-. i(«inicio») f («fin»)La branch i tiene el mismo código que al principio del video. La branch f tiene el mismo código que al final del video. La rama master tiene el estado final del código que aparece en el curso
+Las ramas están estructuradas de manera que se corresponden con cada uno de los videos. La nomenclatura es  `TÍTULO#_VÍDEO#` O `CAPÍTULO#_VÍDEO#`. o por ejemplo, $_MongoDB hace referencia al tercer video del segundo capítulo. i(«inicio») f («fin»)La branch i tiene el mismo código que al principio del video. La branch f tiene el mismo código que al final del video. La rama master tiene el estado final del código que aparece en el curso
 
 Al pasar de una rama a la siguiente después de realizar cambios en los archivos, puede aparecer un mensaje como el siguiente:
 
