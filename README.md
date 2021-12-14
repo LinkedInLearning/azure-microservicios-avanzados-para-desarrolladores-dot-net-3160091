@@ -1,5 +1,5 @@
 # Azure: Microservicios avanzados para desarrolladores .NET
-Este es el repositorio del curso de LinkedIn Learning [NOMBRE DEL CURSO]. El curso completo está disponible en  [LinkedIn Learning][lil-course-url].
+Este es el repositorio del curso de LinkedIn Learning Azure: Microservicios avanzados para desarrolladores .NET. El curso completo está disponible en  [LinkedIn Learning][lil-course-url].
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
