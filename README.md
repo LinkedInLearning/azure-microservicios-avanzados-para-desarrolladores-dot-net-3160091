@@ -39,6 +39,6 @@ _Solutions Architect. Microsoft RD y MVP_
 
 Revisa mis cursos en [LinkedIn Learning](https://www.linkedin.com/learning/instructors/rodrigo-diaz-concha?u=104).
 
-[lil-course-url]: 
-[lil-thumbnail-url]: 
+[lil-course-url]: https://www.linkedin.com/learning/azure-microservicios-avanzados-para-desarrollo-dot-net
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQHf15UuGKFnIw/learning-public-crop_675_1200/0/1638802389279?e=1639555200&v=beta&t=wJb3C8xIShz3DyuqDv_wvBuUYu1mLFdrRbLTASN5aos
 
