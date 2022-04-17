@@ -12,6 +12,8 @@ namespace WisdomPetMedicine.Pet.Domain.ValueObjects
 
         public static PetId Create(Guid value)
         {
+            //var newval = new Guid();
+            //newval.
             Validate(value);
             return new PetId(value);
         }

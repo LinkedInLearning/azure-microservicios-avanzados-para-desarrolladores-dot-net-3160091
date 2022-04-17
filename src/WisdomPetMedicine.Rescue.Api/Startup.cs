@@ -7,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using WisdomPetMedicine.Rescue.Api.ApplicationServices;
 using WisdomPetMedicine.Rescue.Api.Extensions;
 using WisdomPetMedicine.Rescue.Api.Infrastructure;
+using WisdomPetMedicine.Rescue.Api.IntegrationEvents;
 using WisdomPetMedicine.Rescue.Domain.Repositories;
 
 namespace WisdomPetMedicine.Rescue.Api
@@ -25,6 +26,7 @@ namespace WisdomPetMedicine.Rescue.Api
             services.AddRescueDb(Configuration);
             services.AddScoped<AdopterApplicationService>();
             services.AddScoped<IRescueRepository, RescueRepository>();
+            services.AddHostedService<PetFlaggedForAdoptionIntegrationEventHandler>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
